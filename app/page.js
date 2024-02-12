@@ -4,15 +4,15 @@ Image;
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 pb-6 md:pb-0 md:items-center md:justify-center px-4 md:px-8 lg:px-15 h-full">
+    <div className="flex flex-col md:flex-row gap-4 pb-6 md:pb-0 md:items-center md:justify-center px-4 md:px-8 lg:px-15 h-full">
       {/* IMAGE CONTAINER  */}
 
-      <div className="relative w-full h-full">
-        <Image src="/hero.png" alt="Hero bg" fill className="w-full h-full" />
+      <div className="relative w-full h-1/2 md:w-1/2 md:h-full">
+        <Image src="/hero.png" alt="Hero bg" fill className="object-contain" />
       </div>
 
       {/* TEXT CONTAINER  */}
-      <div className="flex flex-col gap-8 h-full w-full items-center justify-center">
+      <div className="flex flex-col gap-8  w-full items-center justify-center h-1/2 md:w-1/2 md:h-full">
         {/* TITLE  */}
         <h1 className="text-4xl md:text-6xl font-bold w-full">
           Full Stack JavaScript Developer
