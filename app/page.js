@@ -8,7 +8,7 @@ export default function Home() {
       {/* IMAGE CONTAINER  */}
 
       <div className="relative w-full h-full">
-        <Image src="/hero.png" alt="Hero bg" fill className="object-contain" />
+        <Image src="/hero.png" alt="Hero bg" fill className="w-full h-full" />
       </div>
 
       {/* TEXT CONTAINER  */}
