@@ -45,9 +45,9 @@ export default function Home() {
             >
               View My Work
             </Link>
-            <button type="button" className="p-4 rounded ring-1 ring-black">
+            <Link href="/contact" className="p-4 rounded ring-1 ring-black">
               Contact Me
-            </button>
+            </Link>
           </div>
         </div>
       </div>
