@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
-const SkillsList = () => {
+const SkillsList = ({ skillsRef, skillsInView }) => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <motion.div
+      initial={{ x: "-1000px" }}
+      animate={skillsInView ? { x: 0 } : {}}
+      transition={{ delay: 0.4 }}
+      className="flex flex-wrap gap-4"
+      ref={skillsRef}
+    >
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         HTML
       </div>
@@ -36,7 +43,7 @@ const SkillsList = () => {
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         MongoDB
       </div>
-    </div>
+    </motion.div>
   );
 };
 

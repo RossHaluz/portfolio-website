@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import ExperienceListItem from "./ExperienceListItem";
 
 const experiences = [
@@ -17,9 +19,14 @@ const experiences = [
   },
 ];
 
-const ExperienceList = () => {
+const ExperienceList = ({ experienceRef, experienceRefInView }) => {
   return (
-    <div className="">
+    <motion.div
+      initial={{ x: "-1000px" }}
+      animate={experienceRefInView ? { x: 0 } : {}}
+      transition={{ delay: 0.4 }}
+      className=""
+    >
       {experiences?.map(({ id, title, desc, date, company }, idx) => {
         return (
           <ExperienceListItem
@@ -32,7 +39,7 @@ const ExperienceList = () => {
           />
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 

@@ -10,7 +10,7 @@ export default function Home() {
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="flex flex-col md:flex-row gap-4 pb-6 md:pb-0 md:items-center md:justify-center px-4 md:px-8 lg:px-15 h-full">
+      <div className="flex flex-col md:flex-row gap-4 pb-6 md:pb-0 md:items-center md:justify-center px-4 md:px-8 lg:px-15 h-full overflow-scroll">
         {/* IMAGE CONTAINER  */}
 
         <div className="relative w-full h-1/2 md:w-1/2 md:h-full">
