@@ -6,20 +6,20 @@ import { motion, useInView } from "framer-motion";
 
 const Skills = () => {
   const skillsRef = useRef();
-  const skillsInView = useInView(skillsRef, { margin: "-50px", once: true });
+  const skillsInView = useInView(skillsRef);
 
   return (
     <div className="flex flex-col gap-12 justify-center" ref={skillsRef}>
-      <motion.h2
+      <h2
         className="font-bold text-2xl"
         initial={{ x: "-300px" }}
         animate={skillsInView ? { x: 0 } : {}}
         transition={{ delay: 0.2 }}
       >
         SKILLS
-      </motion.h2>
+      </h2>
       <SkillsList skillsRef={skillsRef} skillsInView={skillsInView} />
-      <ScrollSVG />
+      {/* <ScrollSVG /> */}
     </div>
   );
 };

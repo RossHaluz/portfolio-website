@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 
 const TransitionProvider = ({ children }) => {
   const pathname = usePathname();
+  console.log(pathname?.substring(1));
 
   return (
     <AnimatePresence mode="wait">
@@ -26,13 +27,13 @@ const TransitionProvider = ({ children }) => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {pathname.substring(1)}
+          {pathname?.substring(1)}
         </motion.div>
 
         <motion.div
           className="h-screen w-screen fixed bg-black rounded-t-[100px] bottom-0 z-40"
           initial={{ height: "140vh" }}
-          animate={{ height: "0vh", transition: { delay: 0.5 } }}
+          animate={{ height: "0vh", transition: { delay: 0.6 } }}
         />
         <div className="h-24">
           <Navbar />

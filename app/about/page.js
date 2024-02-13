@@ -13,7 +13,7 @@ export default function AboutPage() {
 
   return (
     <motion.div
-      className="h-full pb-10"
+      className="h-full mb-10"
       initial={{ y: "-200vh" }}
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
@@ -23,7 +23,7 @@ export default function AboutPage() {
         {/* TEXT CONTAINER  */}
         <div className="p-4 md:px-8 md:py-12 lg:px-15 lg:py-20 flex flex-col gap-24 md:gap-32 lg:gap-48 lg:w-2/4 lg:pr-8">
           {/* BIOGRAPHY  */}
-          <Biography />
+          {/* <Biography /> */}
 
           {/* SKILLS  */}
           <Skills />
