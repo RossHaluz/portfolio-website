@@ -32,7 +32,7 @@ const ContactForm = () => {
             <Field
               as="textarea"
               name="message"
-              className="bg-transparent border-b-2 border-b-black outline-none py-2 resize-none h-[150px]"
+              className="bg-transparent border-b-2 border-b-black outline-none py-2 resize-none"
             />
           </label>
 
