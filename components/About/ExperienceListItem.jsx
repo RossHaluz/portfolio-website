@@ -1,7 +1,7 @@
 import JobDate from "./JobDate";
 import JobDescription from "./JobDescription";
 import JobTitle from "./JobTitle";
-import JobCompany from "./Jobcompany";
+import JobCompany from "./JobCompany";
 
 const ExperienceListItem = ({ title, desc, date, company, idx }) => {
   return (
