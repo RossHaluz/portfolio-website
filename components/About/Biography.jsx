@@ -13,8 +13,8 @@ const Biography = () => {
       </p>
 
       <span className="italic">
-        "You can never understand everything. But you should push yourself to
-        understand the system."
+        &quot;You can never understand everything. But you should push yourself
+        to understand the system.&quot;
       </span>
 
       <SignatureSVG />
