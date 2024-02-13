@@ -20,7 +20,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-24">
+    <div className="h-1/2 lg:h-full lg:w-1/2 bg-red-50 rounded-xl text-xl flex flex-col gap-8 justify-center p-4 lg:p-24">
       <Formik
         initialValues={initialValues}
         onSubmit={onSubmit}
