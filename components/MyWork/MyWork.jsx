@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import MyWorkTitle from "./MyWorkTitle";
 import MyWorkList from "./MyWorkList";
-import Link from "next/link";
 
 const MyWork = () => {
   const ref = useRef();

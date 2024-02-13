@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -38,12 +39,12 @@ export default function Home() {
           </p>
           {/* BUTTONS  */}
           <div className="flex gap-4 items-center w-full">
-            <button
-              type="button"
+            <Link
+              href="/portfolio"
               className="p-4 rounded ring-1 ring-black bg-black text-white"
             >
               View My Work
-            </button>
+            </Link>
             <button type="button" className="p-4 rounded ring-1 ring-black">
               Contact Me
             </button>
