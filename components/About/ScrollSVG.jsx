@@ -1,8 +1,13 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 const ScrollSVG = () => {
   return (
-    <svg
+    <motion.svg
+      initial={{ opacity: 0.2, y: 0 }}
+      animate={{ opacity: 1, y: "10px" }}
+      exit={{ opacity: 0.2, y: 0 }}
+      transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +21,7 @@ const ScrollSVG = () => {
       ></path>
       <path d="M12 6V14" stroke="#000000" strokeWidth="1"></path>
       <path d="M15 11L12 14L9 11" stroke="#000000" strokeWidth="1"></path>
-    </svg>
+    </motion.svg>
   );
 };
 
