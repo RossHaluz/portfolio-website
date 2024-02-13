@@ -7,7 +7,7 @@ const MyWorkListItem = ({ item }) => {
     <div
       className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${color}`}
     >
-      <div className="flex flex-col gap-8 text-white w-2/4">
+      <div className="flex flex-col gap-8 text-white w-[90%] md:w-2/4">
         <h1 className="text-xl font-bold md:text-4xl lg:text-6xl">{title}</h1>
         <div className="relative w-full h-56  md:h-64 lg:h-[350px]">
           <Image src={img} alt="" fill />
