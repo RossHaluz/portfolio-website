@@ -1,4 +1,5 @@
 "use client";
+import HireMe from "@/components/MyWork/HireMe";
 import MyWork from "@/components/MyWork/MyWork";
 import { motion } from "framer-motion";
 
@@ -11,6 +12,7 @@ export default function PortfolioPage() {
       transition={{ duration: 1 }}
     >
       <MyWork />
+      <HireMe />
     </motion.div>
   );
 }
