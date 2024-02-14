@@ -52,7 +52,7 @@ const MenuList = () => {
       variants={listVariants}
       initial="closed"
       animate="opened"
-      className="absolute z-40 top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl"
+      className="absolute z-[55] top-0 left-0 w-screen h-screen bg-black text-white flex flex-col items-center justify-center gap-8 text-4xl"
     >
       {links?.map(({ id, url, title }, idx) => {
         return (

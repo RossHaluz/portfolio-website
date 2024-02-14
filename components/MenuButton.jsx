@@ -35,7 +35,7 @@ const MenuButton = ({ setIsOpen, isOpen }) => {
     <button
       type="button"
       onClick={() => setIsOpen((prev) => !prev)}
-      className="flex flex-col w-10 h-7 justify-between relative z-50"
+      className="flex flex-col w-10 h-7 justify-between relative z-[60]"
     >
       <motion.div
         variants={topVariants}

@@ -18,7 +18,7 @@ const Biography = () => {
       </span>
 
       <SignatureSVG />
-      <ScrollSVG />
+      {/* <ScrollSVG /> */}
     </div>
   );
 };
