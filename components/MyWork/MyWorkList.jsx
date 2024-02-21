@@ -5,6 +5,14 @@ import MyWorkListItem from "./MyWorkListItem";
 const items = [
   {
     id: 1,
+    color: "from-red-300 to-red-300",
+    title: "Complywiser",
+    desc: "Developed a website for a company that optimizes the company's AML costs.",
+    img: "https://res.cloudinary.com/dehupkc5s/image/upload/v1708550444/complywicer/Screenshot_2024-02-21_at_23.19.21_ytt3ap.png",
+    link: "https://www.complywiser.com/en",
+  },
+  {
+    id: 2,
     color: "from-red-300 to-blue-300",
     title: "Online store of home textiles KoalaDream",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
@@ -12,7 +20,7 @@ const items = [
     link: "https://rosshaluz.github.io/koaladream-frontend/",
   },
   {
-    id: 2,
+    id: 3,
     color: "from-blue-300 to-violet-300",
     title: "Task Pro",
     desc: "A web application for organizing and managing tasks and projects.",
@@ -20,7 +28,7 @@ const items = [
     link: "https://rosshaluz.github.io/todo-list-frontend/auth",
   },
   {
-    id: 3,
+    id: 4,
     color: "from-violet-300 to-purple-300",
     title: "YourPet",
     desc: "Web application for adding and searching for pets.",

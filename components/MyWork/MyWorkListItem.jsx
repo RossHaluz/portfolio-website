@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const MyWorkListItem = ({ item }) => {
   const { color, title, img, link, desc } = item;
@@ -13,11 +12,11 @@ const MyWorkListItem = ({ item }) => {
           <Image src={img} alt="" fill />
         </div>
         <p className="w-full lg:text-lg">{desc}</p>
-        <Link href={link} className="flex justify-end">
+        <a href={link} target="_blanck" className="flex justify-end">
           <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
             See Demo
           </button>
-        </Link>
+        </a>
       </div>
     </div>
   );
