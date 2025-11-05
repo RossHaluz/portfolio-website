@@ -1,5 +1,6 @@
 import { sendAdminNotification, sendThankForOrder } from "@/helpers/send-message";
 import { prisma } from "@/lib/prisma";
+import type { Client } from "@prisma/client";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -8,7 +9,7 @@ export async function POST(req: Request) {
     if (!messanger) {
       return NextResponse.json({ message: "Messanger is required" }, {status: 400});
     }
-    const client = await prisma.client.create({
+    const client: Client = await prisma.client.create({
       data: {
         name,
         email,
