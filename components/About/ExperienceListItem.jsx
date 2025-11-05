@@ -6,7 +6,7 @@ import JobCompany from "./JobCompany";
 const ExperienceListItem = ({ title, desc, date, company, idx }) => {
   return (
     <>
-      {idx % 2 === 0 ? (
+      {idx % 2 !== 0 ? (
         <div className="flex justify-between h-48">
           <div className="w-1/3 ">
             <JobTitle title={title} />

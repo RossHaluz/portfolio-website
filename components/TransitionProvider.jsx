@@ -20,7 +20,7 @@ const TransitionProvider = ({ children }) => {
         />
 
         <motion.div
-          className="fixed top-0 bottom-0 right-0 left-0 m-auto text-8xl text-white cursor-default z-50 w-fit h-fit"
+          className="fixed top-0 bottom-0 right-0 left-0 m-auto text-8xl text-white cursor-default z-50 w-fit h-fit pointer-events-none"
           initial={{ opacity: 1 }}
           animate={{ opacity: 0 }}
           exit={{ opacity: 0 }}

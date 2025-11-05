@@ -25,12 +25,14 @@ const HireMe = () => {
             </textPath>
           </text>
         </motion.svg>
-        <Link
-          href="/contact"
-          className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center cursor-pointer"
-        >
-          Hire Me
-        </Link>
+        <div className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto">
+          <Link
+            href="/contact"
+            className="w-full h-full bg-black text-white rounded-full cursor-pointer flex items-center justify-center"
+          >
+            Hire Me
+          </Link>
+        </div>
       </div>
     </div>
   );

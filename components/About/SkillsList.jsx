@@ -11,15 +11,6 @@ const SkillsList = ({ skillsRef, skillsInView }) => {
       ref={skillsRef}
     >
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
-        HTML
-      </div>
-      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
-        CSS
-      </div>
-      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
-        SASS
-      </div>
-      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         JavaScript
       </div>
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
@@ -29,19 +20,31 @@ const SkillsList = ({ skillsRef, skillsInView }) => {
         Next.js
       </div>
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
-        Auth.js
-      </div>
-      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
-        TailwindCSS
-      </div>
-      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         Node.js
       </div>
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         Express.js
       </div>
       <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        Koa.js
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        GraphQL
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        Socket.io
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        RxJS
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        Jest
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
         MongoDB
+      </div>
+      <div className="rounded p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black">
+        PostgresQL
       </div>
     </motion.div>
   );

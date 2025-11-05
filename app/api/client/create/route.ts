@@ -1,0 +1,32 @@
+import { Client } from "@/generated/prisma";
+import { sendAdminNotification, sendThankForOrder } from "@/helpers/send-message";
+import { prisma } from "@/lib/prisma";
+import { NextResponse } from "next/server";
+
+export async function POST(req: Request) {
+  try {
+    const { email, name, messanger, message, userName } = await req.json();
+    if (!messanger) {
+      return NextResponse.json({ message: "Messanger is required" }, {status: 400});
+    }
+
+    const client = await prisma.client.create({
+      data: {
+        name,
+        email,
+        messanger,
+        message,
+        userName
+      },
+    });
+
+    sendThankForOrder(client);
+    sendAdminNotification(client);
+
+    return NextResponse.json({message: 'Client success created'}, {status: 201})
+    
+  } catch (error) {
+    console.log("CREATE_CLIENT", error);
+    return null;
+  }
+}

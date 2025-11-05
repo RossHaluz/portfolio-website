@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const ScrollSVG = () => {
   return (
     <motion.svg
-      initial={{ opacity: 0.2, y: 0 }}
-      animate={{ opacity: 1, y: "10px" }}
-      exit={{ opacity: 0.2, y: 0 }}
+      initial={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: "8px" }}
+      exit={{ opacity: 1, y: 0 }}
       transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
       viewBox="0 0 24 24"
       fill="none"

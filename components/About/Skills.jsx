@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import ScrollSVG from "./ScrollSVG";
 import SkillsList from "./SkillsList";
-import { motion, useInView } from "framer-motion";
+import {  useInView } from "framer-motion";
 
 const Skills = () => {
   const skillsRef = useRef();
@@ -19,7 +19,7 @@ const Skills = () => {
         SKILLS
       </h2>
       <SkillsList skillsRef={skillsRef} skillsInView={skillsInView} />
-      {/* <ScrollSVG /> */}
+      <ScrollSVG />
     </div>
   );
 };
