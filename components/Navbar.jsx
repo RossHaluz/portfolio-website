@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="md:hidden">
         {/* Menu button  */}
         <MenuButton setIsOpen={setIsOpen} isOpen={isOpen} />
-        {isOpen && <MenuList />}
+        {isOpen && <MenuList setIsOpen={setIsOpen} />}
       </div>
     </header>
   );

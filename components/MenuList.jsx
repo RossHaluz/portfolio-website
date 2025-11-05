@@ -1,6 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const links = [
   {
@@ -25,7 +27,8 @@ const links = [
   },
 ];
 
-const MenuList = () => {
+const MenuList = ({ setIsOpen }) => {
+  const router = useRouter();
   const listVariants = {
     closed: {
       x: "100vw",
@@ -63,7 +66,9 @@ const MenuList = () => {
             animate="opened"
             custom={idx}
           >
-            <Link href={url}>{title}</Link>
+            <Link href={url} onClick={() => setIsOpen(false)}>
+              {title}
+            </Link>
           </motion.div>
         );
       })}
