@@ -23,9 +23,8 @@ export async function POST(req: Request) {
   await sendAdminNotification(client);
 
     return NextResponse.json({message: 'Client success created'}, {status: 201})
-    
   } catch (error) {
     console.log("CREATE_CLIENT", error);
-    return null;
+    return NextResponse.json({message: 'Server Error'}, {status: 500});
   }
 }
