@@ -9,7 +9,6 @@ export async function POST(req: Request) {
     if (!messanger) {
       return NextResponse.json({ message: "Messanger is required" }, {status: 400});
     }
-
     const client = await prisma.client.create({
       data: {
         name,
