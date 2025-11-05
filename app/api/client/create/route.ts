@@ -1,4 +1,3 @@
-import { Client } from "@/generated/prisma";
 import { sendAdminNotification, sendThankForOrder } from "@/helpers/send-message";
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
