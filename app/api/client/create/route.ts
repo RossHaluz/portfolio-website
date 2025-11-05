@@ -20,8 +20,8 @@ export async function POST(req: Request) {
       },
     });
 
-    sendThankForOrder(client);
-    sendAdminNotification(client);
+   await sendThankForOrder(client);
+  await sendAdminNotification(client);
 
     return NextResponse.json({message: 'Client success created'}, {status: 201})
     

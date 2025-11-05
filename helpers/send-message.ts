@@ -19,12 +19,17 @@ export const sendThankForOrder = async (data: {
   messanger: string;
   message: string;
 }) => {
-    await transparent.sendMail({
-      to: data?.email,
-      from: process.env.NEXT_PUBLIC_SMTP_USER,
-      subject: "Thanks for the order.",
-      html: clientEmailTemplate(data),
-    });
+    try {
+        await transparent.sendMail({
+          to: data?.email,
+          from: process.env.NEXT_PUBLIC_SMTP_USER,
+          subject: "Thanks for the order.",
+          html: clientEmailTemplate(data),
+        });
+    } catch (error) {
+        console.log(error);
+        
+    }
 };
 
 export const sendAdminNotification = async (data: {
@@ -42,6 +47,5 @@ export const sendAdminNotification = async (data: {
      });
    } catch (error) {
     console.log("SEND_ADMIN_NOTIFICATION_ERROR", error);
-    
    }
 };
