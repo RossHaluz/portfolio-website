@@ -7,7 +7,7 @@ const ExperienceListItem = ({ title, desc, date, company, idx }) => {
   return (
     <>
       {idx % 2 !== 0 ? (
-        <div className="flex justify-between h-48">
+        <div className="flex justify-between max-h-max">
           <div className="w-1/3 ">
             <JobTitle title={title} />
 
@@ -27,7 +27,7 @@ const ExperienceListItem = ({ title, desc, date, company, idx }) => {
           <div className="w-1/3 "></div>
         </div>
       ) : (
-        <div className="flex justify-between h-48">
+        <div className="flex justify-between max-h-max">
           <div className="w-1/3 "></div>
 
           <div className="w-1/6 flex justify-center">
